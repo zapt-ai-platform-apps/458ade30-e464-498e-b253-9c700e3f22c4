@@ -31,3 +31,46 @@ body {
     box-shadow: 0 0 0 0 rgba(52, 211, 153, 0);
   }
 }
+
+/* Add fun, cartoon-like styling */
+.text-shadow {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Rounded buttons */
+button {
+  @apply rounded-full; 
+}
+
+/* Bouncy animations */
+.bounce-hover:hover {
+  animation: bounce 0.5s;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Child-friendly font */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
+}
+
+/* Interactive elements style */
+.interactive-element {
+  @apply transition-all duration-300 cursor-pointer;
+  transform-origin: center;
+}
+
+.interactive-element:hover {
+  @apply scale-110;
+}
+
+.interactive-element:active {
+  @apply scale-95;
+}
